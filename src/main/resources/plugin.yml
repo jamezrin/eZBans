@@ -1,0 +1,21 @@
+name: eZBans
+version: ${project.version}
+main: me.jaime29010.ezbans.Main
+authors: [jaime29010]
+
+commands:
+  ban:
+    description: Ban a player
+  banip:
+    description: Ban the ip of an player
+  banlist:
+    description: List all bans
+  check:
+    description: Check if a player is banned
+  kick:
+    description: Kick a player
+  tempban:
+    description: Temporarily ban a player
+  unban:
+    description: Unban a player
+    aliases: [pardon]
