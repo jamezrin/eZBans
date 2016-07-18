@@ -1,43 +1,10 @@
-prefix: "&e&l(!)&r"
-default-reason: "&7No given reason. Appeal at the forums if you think this is an error."
+# If mysql is disabled, the plugin will store everything in a json file
+mysql:
+  enabled: false
+  address: '127.0.0.1'
+  port: 3306
+  database: minecraft
+  username: root
+  password: ''
 messages:
-  banned: "&e&o%punished% &7got banned by %punisher%"
-  kicked: "&e&o%punished% &7got kicked by %punisher%"
-  unbanned: "&e&o%punished% &7got unbanned by %admin%"
-
-  kick-exempt: "&7You are not able to kick this player!"
-  ban-exempt: "&7You are not able to ban this player!"
-  no-perms: "&7You don't have enough permissions!"
-  already-banned: "&7%identifier% is already banned!"
-  offline: "&7%target% is not online"
-  error-unban: "&7%target% is not banned"
-
-  layouts:
-    banlist:
-      header:
-        - "&7Ban List:"
-        - "&9&lPlayer/IP &8| &c&lBanned Until &8| &7&lBanned by"
-        - "&e&oReason"
-      entry:
-        - "&9%identifier% &8| &c%until% &8| &7%punisher%"
-        - "&7%reason%"
-    kick:
-      - '%prefix% &7You have been Kicked'
-      - "&cReason &e%reason%"
-    ban:
-      - '%prefix% &7You have been permanently banned'
-      - "&cReason &e%reason%"
-      - '&cUnban application in teamspeak or use the forums'
-    tempban:
-      - '%prefix% &7You have been temporarily banned'
-      - "&cReason &e%reason%"
-      - "&cBanned until &7%until%"
-      - '&cUnban application in teamspeak or use the forums'
-usage:
-  check: "%prefix% &cUsage: &o/%label% <ip:player>"
-  kick: "%prefix% &cUsage: &o/%label% <player> [reason]"
-  ban: "%prefix% &cUsage: &o/%label% <player> [reason]"
-  banip: "%prefix% &cUsage: &o/%label% <ip:player> [reason]"
-  tempban: "%prefix% &cUsage: &o/%label% <player> <duration> <S:M:H:D:Mo:Y> [reason] "
-  unban: "%prefix% &cUsage: &o/%label% <ip:player>"
-  banlist: "%prefix% &cUsage: &o/%label%"
+  test: "This is a test"

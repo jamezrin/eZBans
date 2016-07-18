@@ -23,6 +23,7 @@ public class ConfigurationManager {
         config = YamlConfiguration.loadConfiguration(file);
         return config;
     }
+
     public static FileConfiguration loadConfig(String name, Main main) {
         return loadConfig(new File(main.getDataFolder(), name), main);
     }

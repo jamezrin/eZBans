@@ -6,14 +6,15 @@ import java.util.List;
 
 public class PluginUtils {
     public static char SEPARATOR = ' ';
+
     public static String joinArray(String[] array, int start, int end) {
         final StringBuilder builder = new StringBuilder();
         int index = start;
         while (index < end) {
-            builder.append(array [index++]);
+            builder.append(array[index++]);
             builder.append(SEPARATOR);
         }
-        builder.append(array [index]);
+        builder.append(array[index]);
         return builder.toString();
     }
 

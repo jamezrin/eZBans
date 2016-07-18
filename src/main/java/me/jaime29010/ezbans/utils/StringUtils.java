@@ -18,9 +18,9 @@ public class StringUtils {
         final StringBuilder builder = new StringBuilder();
         int index = start;
         while (index < end) {
-            builder.append(joiner.addEntry(array [index++]));
+            builder.append(joiner.addEntry(array[index++]));
         }
-        builder.append(joiner.addLast(array [index]));
+        builder.append(joiner.addLast(array[index]));
         return builder.toString();
     }
 
